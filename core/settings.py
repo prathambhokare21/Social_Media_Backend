@@ -1,3 +1,4 @@
+import os
 """
 Django settings for core project.
 
@@ -21,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/6.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '8Rv5E43x590MJ8K0zqk5KGIZLkrs4Ah3mJXwMXwEsPOes3P-QiIgdyOEXvNZgTC5bD0'
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
