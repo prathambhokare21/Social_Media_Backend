@@ -8,15 +8,19 @@ The API is deployed on **Render** and can be tested using **Postman**.
 
 ---
 
-## 🚀 Live API
+🚀 Live API
 
-**Base URL:**
+Base URL:
 
-http://social-media-backend-ypng.onrender.com/
+https://social-media-backend-ypng.onrender.com/
 
-You can use the deployed API with Postman to test the available endpoints.
+Swagger API Documentation:
 
-> Note: This project is backend-only. There is currently no frontend interface.
+https://social-media-backend-ypng.onrender.com/swagger/
+
+You can use the deployed API with Postman or Swagger UI to test the available endpoints.
+
+Note: This project is backend-only. There is currently no frontend interface.
 
 ---
 
