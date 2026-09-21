@@ -12,11 +12,11 @@ The API is deployed on **Render** and can be tested using **Postman**.
 
 Base URL:
 
-https://social-media-backend-ynng.onrender.com/
+https://social-media-backend-ypng.onrender.com/
 
 Swagger API Documentation:
 
-View Swagger UI
+https://social-media-backend-ypng.onrender.com/swagger/
 
 You can use the deployed API with Postman or Swagger UI to test the available endpoints.
 
