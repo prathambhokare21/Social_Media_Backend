@@ -1,3 +1,4 @@
+from drf_spectacular.utils import extend_schema
 from django.shortcuts import render
 from .serializers import RegistartionSerializer,LoginSerializer
 from rest_framework.views import APIView
@@ -19,7 +20,11 @@ class RegistrationAPIView(APIView):
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         else:
             return Response(serializer.errors,status=status.HTTP_400_BAD_REQUEST)
+
         
+@extend_schema(
+    request = LoginSerializer
+)
 class LoginAPIView(APIView):
     def post(self,request):
         serializer = LoginSerializer(data = request.data)

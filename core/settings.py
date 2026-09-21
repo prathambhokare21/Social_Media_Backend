@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'accounts',
     'posts',
     'comments',
+    'drf_spectacular',
 ]
 
 MIDDLEWARE = [
@@ -131,3 +132,8 @@ REST_FRAMEWORK = {
 
 MEDIA_URL = "/media/"
 MEDIA_ROOT = BASE_DIR / "media"
+
+REST_FRAMEWORK = {
+    'DEFAULT_SCHEMA_CLASS': 
+    'drf_spectacular.openapi.AutoSchema',
+}
