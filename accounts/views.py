@@ -12,6 +12,9 @@ from django.shortcuts import get_object_or_404
 from rest_framework import status
 # Create your views here.
 
+@extend_schema(
+    request=RegistartionSerializer
+)
 class RegistrationAPIView(APIView):
     def post(self,request):
         serializer = RegistartionSerializer(data = request.data)
